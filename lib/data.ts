@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import whiteCodeSync from "@/public/code_sync_white.png";
+import whiteSchoolGrid from "@/public/school_grid_white.png";
+import blackCodeSync from "@/public/code_sync_black.png";
+import blackSchoolGrid from "@/public/school_grid_black.png";
+import { MdCelebration } from "react-icons/md";
 
 export const links = [
   {
@@ -35,73 +37,82 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "2nd runner up in Hackathon",
+    location: "Kathmandu, Nepal",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I participated in a Texas College Volume 1 Hackathon and we secured 2nd runner up position.",
+    icon: React.createElement(MdCelebration),
+    date: "2025 April",
   },
   {
     title: "Full-Stack Developer",
-    location: "Houston, TX",
+    location: "Wembly, London",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I started my journey as a full-stack developer in 2024. I'm currently working as a full time full stack developer in a company named CrowdBazaar. I'm open to freelance opportunities.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 August - present",
+  },
+  {
+    title: "Bachelor of Science in Computer Science",
+    location: "Kathmandu, Nepal",
+    description:
+      "I'm currently pursuing my Bachelor in Information Technology (BIT) at a college named Texas International College of Management and Technology with a overall  CGPA of GPA 3.92",
+    icon: React.createElement(LuGraduationCap),
+    date: "2024",
+  },
+  {
+    title: "Graduated High School",
+    location: "Kathmandu, Nepal",
+    description:
+      "I graduated physical science from a school named Times International College with GPA 3.78",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "CodeSync",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "The platform that compile JavaScript and TypeScript code. And It also provide room where multiple users can interact with each other doing code sharing and collaboration.",
+    tags: ["Editor", "Next.js"],
+    whiteUrl: whiteCodeSync,
+    blackUrl: blackCodeSync,
+    url: "https://code-sync-silk.vercel.app/",
+    githubUrl: "https://github.com/sauravpandey538/Code_Sync",
   },
   {
-    title: "rmtDev",
+    title: "SchoolGrid",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A platform that allows college faculty to manage their teachers and students, providing a dashboard that includes timetable, real-time notice, etc",
+    tags: ["React-Calander", "Pusher-js"],
+    whiteUrl: whiteSchoolGrid,
+    url: "https://school-grid-lyart.vercel.app/",
+    blackUrl: blackSchoolGrid,
+    githubUrl: "https://github.com/sauravpandey538/Hackathon",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
   "Next.js",
+  "Shadcn",
+  "React js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
+  "Express js",
+  "Knex.js",
   "PostgreSQL",
-  "Python",
-  "Django",
+  "Tailwind CSS",
+  "Chakra UI",
   "Framer Motion",
+  "GitHUB",
+  "AWS S3 Bucket",
+  "Vercel",
+  "Puppeteer",
+  "Stripe",
+  "META API",
+  "Pusher JS",
+  "O-Auth",
+  "Postman",
+  "Redux",
+  "Zustand",
 ] as const;

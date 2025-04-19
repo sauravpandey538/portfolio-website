@@ -4,6 +4,11 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useTheme } from "@/context/theme-context";
+import { Link } from "@react-email/components";
+import { Button } from "@react-email/components";
+import { FaGithub } from "react-icons/fa";
+import { TbWorld } from "react-icons/tb";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,9 +16,13 @@ export default function Project({
   title,
   description,
   tags,
-  imageUrl,
+  whiteUrl,
+  blackUrl,
+  url,
+  githubUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["0 1", "1.33 1"],
@@ -46,24 +55,45 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <div className="flex gap-3 mt-4">
+            {/* Website link */}
+            <Button className="p-2 bg-white border border-gray-300 rounded-md hover:bg-blue-100 transition">
+              <Link
+                href={url}
+                className="text-black hover:text-blue-600 transition-colors"
+              >
+                <TbWorld size={20} />
+              </Link>
+            </Button>
+
+            {/* Github link */}
+            <Button className="p-2 bg-white border border-gray-300 rounded-md hover:bg-blue-100 transition">
+              <Link
+                href={githubUrl}
+                className="text-black hover:text-blue-600 transition-colors"
+              >
+                <FaGithub size={20} />
+              </Link>
+            </Button>
+          </div>
         </div>
 
         <Image
-          src={imageUrl}
+          src={theme === "light" ? whiteUrl : blackUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
+          className="pointer-events-none absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+    transition 
+    group-hover:scale-[1.04]
+    group-hover:-translate-x-3
+    group-hover:translate-y-3
+    group-hover:-rotate-2
 
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+    group-even:group-hover:translate-x-3
+    group-even:group-hover:translate-y-3
+    group-even:group-hover:rotate-2
 
-        group-even:right-[initial] group-even:-left-40"
+    group-even:right-[initial] group-even:-left-40"
         />
       </section>
     </motion.div>
