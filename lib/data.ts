@@ -56,7 +56,7 @@ export const experiencesData = [
     title: "Bachelor of Science in Computer Science",
     location: "Kathmandu, Nepal",
     description:
-      "I'm currently pursuing my Bachelor in Information Technology (BIT) at a college named Texas International College of Management and Technology with a overall  CGPA of GPA 3.92",
+      "I'm currently pursuing my Bachelor in Information Technology (BIT) at a college named Texas International College of Management and Technology with a overall  CGPA of  3.92",
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
@@ -64,7 +64,7 @@ export const experiencesData = [
     title: "Graduated High School",
     location: "Kathmandu, Nepal",
     description:
-      "I graduated physical science from a school named Times International College with GPA 3.78",
+      "I graduated physical science from a college named Times International College with GPA 3.78",
     icon: React.createElement(LuGraduationCap),
     date: "2021",
   },
