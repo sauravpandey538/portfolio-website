@@ -15,7 +15,7 @@ import { TbBrandLeetcode } from "react-icons/tb";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-  const startingTime = new Date("Aug 2024");
+  const startingTime = new Date("2024-08-01T00:00:00Z"); // ISO format = safe everywhere
   const now = new Date();
 
   const totalMonths = differenceInMonths(now, startingTime);
