@@ -12,15 +12,15 @@ export default function CurvedTimeline() {
       color: "#06b6d4",
       label: "Japanese Teacher",
       title: "N5/N4 Level",
-      date: "Aug 2025",
+      date: "Oct 2023",
     },
     {
       x: 350,
       y: 250,
       color: "#06b6d4",
       label: "CrowdBazaar Pvt. Ltd.",
-      title: "PERN Stack Internship",
-      date: "Sep 2025",
+      title: "Full Stack Developer",
+      date: "Aug 2024",
     },
     {
       x: 650,
@@ -28,16 +28,16 @@ export default function CurvedTimeline() {
       color: "#8b5cf6",
       label: "Texas Vol 1 Hackathon",
       title: "2nd Runner Up",
-      date: "Oct 2025",
+      date: "Apr 2025",
     },
-    {
-      x: 950,
-      y: 200,
-      color: "#8b5cf6",
-      label: "CrowdBazaar Pvt. Ltd.",
-      title: "FT PERN Stack Developer",
-      date: "Nov 2025",
-    },
+    // {
+    //   x: 950,
+    //   y: 200,
+    //   color: "#8b5cf6",
+    //   label: "CrowdBazaar Pvt. Ltd.",
+    //   title: "FT PERN Stack Developer",
+    //   date: "Nov 2025",
+    // },
   ];
 
   return (
