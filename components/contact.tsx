@@ -1,43 +1,31 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import MainHeading from "./text";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
+import { myInfo } from "@/lib/data";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
 
   return (
-    <motion.section
-      id="contact"
-      ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-      }}
-    >
-      <SectionHeading>Contact me</SectionHeading>
+    <div className="container mx-auto flex items-center justify-center">
+      <div
+        id="contact"
+        ref={ref}
+        className="mb-12 w-[min(100%,38rem)] text-center"
+      >
+        <MainHeading text="Contact me" className="text-cyan-500" />
 
-      <p className="text-gray-500 -mt-6 ">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:hi@sauravpandey.com">
-          hi@sauravpandey.com
-        </a>{" "}
-        or you can reach me at +9779869751266.
-      </p>
-    </motion.section>
+        <p className="text-secondary mx-2 mt-4">
+          Please email me directly at{" "}
+          <a className="underline" href={`mailto:${myInfo.email}`}>
+            {myInfo.email}
+          </a>{" "}
+          or you can reach me at {myInfo.phone}.
+        </p>
+      </div>
+    </div>
   );
 }

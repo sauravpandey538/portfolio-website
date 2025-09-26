@@ -1,21 +1,26 @@
-import About from "@/components/about";
+import Faq from "@/components/faq";
+import AnimatedExpertise from "@/components/animated-expertise";
+import HeroSection from "@/components/hero-section";
+import WhyToHire from "@/components/why-to-hire";
+import Expertise from "@/components/expertise";
+import ProjectsList from "@/components/projects-list";
+import Timeline from "@/components/timeline";
+import React from "react";
 import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
 
-export default function Home() {
+function page() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
+    <div className="bg-background flex flex-col gap-16 ">
+      <HeroSection />
+      <AnimatedExpertise />
+      <Expertise />
+      <ProjectsList />
+      <WhyToHire />
+      <Timeline />
+      <Faq />
       <Contact />
-    </main>
+    </div>
   );
 }
+
+export default page;

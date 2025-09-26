@@ -1,65 +1,108 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 
-  return (
-    <header className="z-[999] relative">
-      <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-      ></motion.div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+  return (
+    <header className="fixed top-0 left-0 w-full z-[999] bg-background/70 backdrop-blur-md">
+      <nav className="container mx-auto flex items-center justify-between py-3 px-4">
+        {/* Logo */}
+        <h1 className="font-bold text-2xl text-cyan-400 tracking-wider">
+          Saurav.<span className="text-purple-400/60">Dev</span>
+        </h1>
+
+        {/* Desktop Nav */}
+        <ul className="hidden sm:flex items-center gap-4 text-sm font-medium text-secondary sm:gap-6">
           {links.map((link) => (
             <motion.li
-              className="h-3/4 flex items-center justify-center relative"
               key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
+              className="relative"
+              initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
-                  {
-                    "text-gray-950 dark:text-gray-200":
-                      activeSection === link.name,
-                  }
-                )}
                 href={link.hash}
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
                 }}
+                className={clsx(
+                  "relative px-3 py-1 rounded-md transition-colors",
+                  {
+                    "text-secondary": activeSection === link.name,
+                    "hover:text-cyan-400": activeSection !== link.name,
+                  }
+                )}
               >
                 {link.name}
 
-                {link.name === activeSection && (
+                {/* Animated highlight */}
+                {activeSection === link.name && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
                     layoutId="activeSection"
+                    className="absolute inset-0 rounded-md bg-cyan-400/80 -z-10"
                     transition={{
                       type: "spring",
-                      stiffness: 380,
+                      stiffness: 350,
                       damping: 30,
                     }}
-                  ></motion.span>
+                  />
                 )}
               </Link>
             </motion.li>
           ))}
         </ul>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="sm:hidden text-gray-400 hover:text-cyan-400 transition"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          className="sm:hidden bg-background/95 backdrop-blur-md px-6 py-4 border-t border-gray-700"
+        >
+          <ul className="flex flex-col gap-4 text-sm font-medium text-gray-300">
+            {links.map((link) => (
+              <li key={link.hash}>
+                <Link
+                  href={link.hash}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                    setTimeOfLastClick(Date.now());
+                    setMenuOpen(false); // close menu on click
+                  }}
+                  className={clsx("block px-2 py-1 rounded-md", {
+                    "text-white bg-cyan-400/80": activeSection === link.name,
+                    "hover:text-cyan-400": activeSection !== link.name,
+                  })}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+      )}
     </header>
   );
 }

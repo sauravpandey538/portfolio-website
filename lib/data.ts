@@ -7,6 +7,8 @@ import whiteSchoolGrid from "@/public/school_grid_white.png";
 import blackCodeSync from "@/public/code_sync_black.png";
 import blackSchoolGrid from "@/public/school_grid_black.png";
 import { MdCelebration } from "react-icons/md";
+import migrantMinds from "@/public/migrantminds.png";
+import tiffinBox from "@/public/tiffinbox.png";
 
 export const links = [
   {
@@ -14,16 +16,16 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Projects",
     hash: "#projects",
   },
   {
-    name: "Skills",
-    hash: "#skills",
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Experience",
@@ -70,14 +72,14 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const myProjects = [
   {
     title: "CodeSync",
     description:
       "The platform that compile JavaScript and TypeScript code. And It also provide room where multiple users can interact with each other doing code sharing and collaboration.",
     tags: ["Editor", "Next.js"],
     whiteUrl: whiteCodeSync,
-    blackUrl: blackCodeSync,
+    blackUrl: whiteCodeSync,
     url: "https://code-sync-silk.vercel.app/",
     githubUrl: "https://github.com/sauravpandey538/Code_Sync",
   },
@@ -88,10 +90,30 @@ export const projectsData = [
     tags: ["React-Calander", "Pusher-js"],
     whiteUrl: whiteSchoolGrid,
     url: "https://school-grid-lyart.vercel.app/",
-    blackUrl: blackSchoolGrid,
+    blackUrl: whiteSchoolGrid,
     githubUrl: "https://github.com/sauravpandey538/Hackathon",
   },
-] as const;
+] as any;
+export const companyProjects = [
+  {
+    title: "MigrantMinds",
+    description:
+      "The platform that helps immigrants to the UK to find their visa sponsors and mentors. It is designed to make a template documents for Global Talent Visa (GTV) and Innovator Founder Visa (IFV).",
+    tags: ["Google Calander"],
+    whiteUrl: migrantMinds,
+    blackUrl: migrantMinds,
+    url: "https://migrantminds.co.uk",
+  },
+  {
+    title: "TiffinBox",
+    description:
+      "A platform that allows vendors to manage their weekly meal plans, and customers to order their meals online.",
+    tags: ["Stripe Marketplace"],
+    whiteUrl: tiffinBox,
+    url: "https://tiffinbox.store",
+    blackUrl: tiffinBox,
+  },
+] as any;
 
 export const skillsData = [
   "Next.js",
@@ -116,3 +138,13 @@ export const skillsData = [
   "Redux",
   "Zustand",
 ] as const;
+
+export const myInfo = {
+  name: "Saurav Pandey",
+  email: "hi@sauravpandey.com",
+  phone: "+9779869751266",
+  address: "Kathmandu, Nepal",
+  linkedin: "https://www.linkedin.com/in/saurav-pandey-b3648530a/",
+  github: "https://github.com/sauravpandey538/",
+  leetcode: "https://leetcode.com/u/sauravpandey0325/",
+};
