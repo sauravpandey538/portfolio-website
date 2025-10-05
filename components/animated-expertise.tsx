@@ -21,6 +21,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { RiGeminiFill } from "react-icons/ri";
 
 function AnimatedExpertise() {
   const icons = [
@@ -67,12 +68,12 @@ function AnimatedExpertise() {
     {
       id: 9,
       icon: <FaWhatsapp size={24} className="text-green-500" />,
-      title: "Whatsapp Api",
+      title: "Whatsapp API",
     },
     {
       id: 10,
       icon: <SiGooglecalendar size={24} className="text-blue-600" />,
-      title: "Google Calendar Api",
+      title: "Google Calendar API",
     },
     {
       id: 11,
@@ -112,6 +113,19 @@ function AnimatedExpertise() {
       ),
       title: "LogRocket",
     },
+    {
+      id: 18,
+      icon: (
+        <div className="relative w-6 h-6 flex items-center justify-center">
+          {/* white Gemini logo */}
+          <RiGeminiFill
+            size={22}
+            className="relative text-white drop-shadow-[0_0_4px_rgba(255,255,255,0.6)]"
+          />
+        </div>
+      ),
+      title: "Gemini API",
+    },
   ];
 
   return (
@@ -134,7 +148,7 @@ function AnimatedExpertise() {
         </div>
       </div>
       <footer className="hidden lg:block text-sm text-muted-foreground text-center">
-        Hover icons to see about the skill.
+        Hover icons to read.
       </footer>
     </div>
   );

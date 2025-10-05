@@ -77,7 +77,7 @@ export const myProjects = [
     title: "CodeSync",
     description:
       "The platform that compile JavaScript and TypeScript code. And It also provide room where multiple users can interact with each other doing code sharing and collaboration.",
-    tags: ["Editor", "Next.js"],
+    tags: ["Editor"],
     whiteUrl: whiteCodeSync,
     blackUrl: whiteCodeSync,
     url: "https://code-sync-silk.vercel.app/",
@@ -87,7 +87,7 @@ export const myProjects = [
     title: "SchoolGrid",
     description:
       "A platform that allows college faculty to manage their teachers and students, providing a dashboard that includes timetable, real-time notice, etc",
-    tags: ["React-Calander", "Pusher-js"],
+    tags: ["Pusher-js"],
     whiteUrl: whiteSchoolGrid,
     url: "https://school-grid-lyart.vercel.app/",
     blackUrl: whiteSchoolGrid,
@@ -98,8 +98,8 @@ export const companyProjects = [
   {
     title: "MigrantMinds",
     description:
-      "The platform that helps immigrants to the UK to find their visa sponsors and mentors. It is designed to make a template documents for Global Talent Visa (GTV) and Innovator Founder Visa (IFV).",
-    tags: ["Google Calander"],
+      "This platform  is designed to make a  documents for Global Talent Visa (GTV) and Innovator Founder Visa (IFV) using AI.",
+    tags: ["Gemini API"],
     whiteUrl: migrantMinds,
     blackUrl: migrantMinds,
     url: "https://migrantminds.co.uk",

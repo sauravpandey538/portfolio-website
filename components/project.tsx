@@ -26,14 +26,14 @@ export default function Project({
       ref={ref}
       className="group  bg-gradient-to-b from-cyan-400 to-purple-400 p-[1px] rounded-lg"
     >
-      <section className="bg-background w-full  rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem]  transition sm:group-even:pl-8 border ">
+      <section className="bg-background w-full  rounded-lg overflow-hidden sm:pr-8 relative sm:h-[25rem]  transition sm:group-even:pl-8 border ">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold text-secondary">{title}</h3>
           <p className="mt-2 leading-relaxed text-secondary">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
+          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto ">
             {tags.map((tag: any, index: any) => (
               <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white/70 rounded-full dark:text-white/70"
+                className="bg-cyan-400/40 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white/70 rounded-full dark:text-white/70"
                 key={index}
               >
                 {tag}

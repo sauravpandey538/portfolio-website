@@ -25,8 +25,8 @@ function HeroSection() {
           <p className="text-secondary leading-loose text-base sm:text-lg">
             At <span className="font-semibold text-cyan-400">TiffinBox</span>, I
             was the sole developer responsible for building a full restaurant
-            booking ecosystem — covering everything from customers and vendors
-            to delivery partners and administrators.
+            booking ecosystem covering everything from customers and vendors to
+            delivery partners and administrators.
           </p>
 
           <p className="text-secondary leading-loose text-base sm:text-lg">

@@ -75,10 +75,13 @@ function WhyToHire() {
   return (
     <div
       ref={containerRef}
-      className="container mx-auto flex flex-col items-center justify-center relative "
-      id="about"
+      className="container mx-auto flex flex-col items-center justify-center relative border"
     >
-      <div className="w-full px-8 flex flex-col items-center justify-center my-8">
+      <div
+        ref={ref}
+        id="about"
+        className="w-full px-8 flex flex-col items-center justify-center my-8"
+      >
         <MainHeading text="Why to hire me" className="text-cyan-500" />
         <Paragraph
           text="A positive and passionate person who is always looking for new challenges and opportunities to learn and grow that will surely bring a positive impact to your organization."
