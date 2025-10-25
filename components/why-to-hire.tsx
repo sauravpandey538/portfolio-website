@@ -75,7 +75,7 @@ function WhyToHire() {
   return (
     <div
       ref={containerRef}
-      className="container mx-auto flex flex-col items-center justify-center relative border"
+      className="container mx-auto flex flex-col items-center justify-center relative "
     >
       <div
         ref={ref}

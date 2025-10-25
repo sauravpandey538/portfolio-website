@@ -9,6 +9,7 @@ import blackSchoolGrid from "@/public/school_grid_black.png";
 import { MdCelebration } from "react-icons/md";
 import migrantMinds from "@/public/migrantminds.png";
 import tiffinBox from "@/public/tiffinbox.png";
+import whiteSajiloPdf from "@/public/Sajilo_Pdf.png";
 
 export const links = [
   {
@@ -84,14 +85,14 @@ export const myProjects = [
     githubUrl: "https://github.com/sauravpandey538/Code_Sync",
   },
   {
-    title: "SchoolGrid",
+    title: "SajiloPdf",
     description:
-      "A platform that allows college faculty to manage their teachers and students, providing a dashboard that includes timetable, real-time notice, etc",
-    tags: ["Pusher-js"],
-    whiteUrl: whiteSchoolGrid,
-    url: "https://school-grid-lyart.vercel.app/",
-    blackUrl: whiteSchoolGrid,
-    githubUrl: "https://github.com/sauravpandey538/Hackathon",
+      "A platform that allows students to generate and manipulate documents in PDF format.",
+    tags: ["PDF Generation"],
+    whiteUrl: whiteSajiloPdf,
+    url: "https://sajilopdf.vercel.app/",
+    blackUrl: whiteSajiloPdf,
+    githubUrl: "https://github.com/sauravpandey538/pdf2pdf",
   },
 ] as any;
 export const companyProjects = [

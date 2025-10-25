@@ -1,5 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import { HiDownload } from "react-icons/hi";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { TbBrandLeetcode } from "react-icons/tb";
+import { EyeIcon } from "lucide-react";
 
 function HeroSection() {
   return (
@@ -43,9 +48,18 @@ function HeroSection() {
             Beyond my professional work, I’ve also built personal projects
             including <span className="font-semibold">CodeSync</span>, a
             JavaScript compiler platform, and{" "}
-            <span className="font-semibold">SchoolGrid</span>, a school
-            management platform.
+            <span className="font-semibold">SajiloPdf</span>, a document
+            generator for assignments.
           </p>
+          <Link
+            href="/Saurav_Resume.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <Button className="bg-cyan-400/80 text-white hover:bg-cyan-400/90 transition mt-12">
+              View Resume <EyeIcon className="h-4 w-4 text-white" />
+            </Button>
+          </Link>
         </div>
 
         {/* Right - Profile Image */}
