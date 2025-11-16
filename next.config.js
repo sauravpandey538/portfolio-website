@@ -7,9 +7,15 @@ const nextConfig = {
         hostname: "images.unsplash.com",
       },
     ],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+      },
+    ],
   },
   experimental: {
-    serverActions: true,
+    serverActions: {},
   },
 };
 

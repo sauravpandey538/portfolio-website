@@ -10,6 +10,7 @@ import { MdCelebration } from "react-icons/md";
 import migrantMinds from "@/public/migrantminds.png";
 import tiffinBox from "@/public/tiffinbox.png";
 import whiteSajiloPdf from "@/public/Sajilo_Pdf.png";
+import npmDevkitLite from "@/public/npm.png";
 
 export const links = [
   {
@@ -81,14 +82,24 @@ export const myProjects = [
     tags: ["Editor"],
     whiteUrl: whiteCodeSync,
     blackUrl: whiteCodeSync,
-    url: "https://code-sync-silk.vercel.app/",
+    url: "https://codesync-lac.vercel.app/",
     githubUrl: "https://github.com/sauravpandey538/Code_Sync",
+  },
+  {
+    title: "Devkit-Lite",
+    description:
+      "A lightweight TypeScript utility library providing essential developer tools for placeholder images, lorem ipsum text generation, and enhanced console logging.",
+    tags: ["chalk", "lorem-ipsum"],
+    whiteUrl: npmDevkitLite,
+    blackUrl: npmDevkitLite,
+    url: "https://www.npmjs.com/package/devkit-lite",
+    githubUrl: "https://github.com/sauravpandey538/devkit-lite",
   },
   {
     title: "SajiloPdf",
     description:
-      "A platform that allows students to generate and manipulate documents in PDF format.",
-    tags: ["PDF Generation"],
+      "A very simple platform that allows students to generate and manipulate documents in PDF format.",
+    tags: ["PDF Generation", "Assignment Helper", "PDF Manipulation"],
     whiteUrl: whiteSajiloPdf,
     url: "https://sajilopdf.vercel.app/",
     blackUrl: whiteSajiloPdf,
@@ -99,8 +110,8 @@ export const companyProjects = [
   {
     title: "MigrantMinds",
     description:
-      "This platform  is designed to make a  documents for Global Talent Visa (GTV) and Innovator Founder Visa (IFV) using AI.",
-    tags: ["Gemini API"],
+      "This platform uses AI to analyze profiles and create documents for the UK Global Talent Visa (GTV) and UK Innovator Founder Visa (IFV).",
+    tags: ["AI Analysis", "GCP", "AI Document Generation"],
     whiteUrl: migrantMinds,
     blackUrl: migrantMinds,
     url: "https://migrantminds.co.uk",
@@ -108,8 +119,8 @@ export const companyProjects = [
   {
     title: "TiffinBox",
     description:
-      "A platform that allows vendors to manage their weekly meal plans, and customers to order their meals online.",
-    tags: ["Stripe Marketplace"],
+      "A meal ordering platform with weekly plan management and a full ecosystem for customers, vendors, delivery partners, and admin(platform).",
+    tags: ["Ecommerce", "Marketplace", "Ecommerce EcoSystem"],
     whiteUrl: tiffinBox,
     url: "https://tiffinbox.store",
     blackUrl: tiffinBox,
