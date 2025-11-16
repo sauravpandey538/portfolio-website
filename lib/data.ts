@@ -82,7 +82,7 @@ export const myProjects = [
     tags: ["Editor"],
     whiteUrl: whiteCodeSync,
     blackUrl: whiteCodeSync,
-    url: "https://codesync-lac.vercel.app/",
+    url: "https://code.sauravpandey.com/",
     githubUrl: "https://github.com/sauravpandey538/Code_Sync",
   },
   {
@@ -101,7 +101,7 @@ export const myProjects = [
       "A very simple platform that allows students to generate and manipulate documents in PDF format.",
     tags: ["PDF Generation", "Assignment Helper", "PDF Manipulation"],
     whiteUrl: whiteSajiloPdf,
-    url: "https://sajilopdf.vercel.app/",
+    url: "https://pdf.sauravpandey.com/",
     blackUrl: whiteSajiloPdf,
     githubUrl: "https://github.com/sauravpandey538/pdf2pdf",
   },
