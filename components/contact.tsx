@@ -23,6 +23,10 @@ export default function Contact() {
           <a className="underline" href={`mailto:${myInfo.email}`}>
             {myInfo.email}
           </a>{" "}
+          or{" "}
+          <a className="underline" href={`mailto:${myInfo.secondaryEmail}`}>
+            {myInfo.secondaryEmail}
+          </a>{" "}
           or you can reach me at {myInfo.phone}.
         </p>
       </div>

@@ -49,7 +49,7 @@ function WhyToHire() {
       setLines(
         [q1Ref.current, q2Ref.current, q3Ref.current]
           .map((q) => makeLine(q))
-          .filter((l): l is { start: Point; end: Point } => l !== null)
+          .filter((l): l is { start: Point; end: Point } => l !== null),
       );
     };
 
@@ -103,20 +103,19 @@ function WhyToHire() {
         {/* Questions in Flex */}
         <div className="flex gap-6 mt-28 text-center z-20 max-w-2xl w-full  items-center justify-center overflow-hidden">
           <p ref={q1Ref} className="max-w-sm md:p-4 text-secondary">
-            Strong Work Ethic <br /> & <br /> Reliability
+            Problem Solving <br /> & <br /> Algorithmic Thinking
           </p>
           <p
             ref={q2Ref}
             className="max-w-sm md:border-l-2  md:border-purple-500/60 md:p-4 text-secondary"
           >
-            Team Collaboration <br /> & <br /> Communication
+            Scalable System Design <br /> & <br /> Clean Architecture
           </p>
           <p
             ref={q3Ref}
             className="max-w-sm md:border-l-2 md:border-purple-500/60 md:p-4 text-secondary"
           >
-            Continuous Learning <br /> & <br />
-            Innovation
+            Continuous Learning <br /> & <br /> AI & Innovation
           </p>
         </div>
 

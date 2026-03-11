@@ -32,7 +32,7 @@ function Expertise() {
                       Frontend Developer
                     </h2>
                     <p className="text-xs w-full text-start leading-relaxed ">
-                      I use React, Next.js, <br /> Tailwind CSS, and
+                      I use Next.js, <br /> Tailwind CSS, and
                       <br /> TypeScript to build <br /> user interfaces.
                     </p>
                   </div>
@@ -67,7 +67,7 @@ function Expertise() {
                     <h2 className="text-cyan-400 w-full text-left ">Webhook</h2>
                     <p className="text-xs w-full text-start leading-relaxed ">
                       I worked with <br /> webhooks of Stripe, <br /> Whatsapp,
-                      and google <br /> calendar and many more.
+                      and GCP <br /> and many more.
                       <br />
                     </p>
                   </div>
@@ -81,9 +81,9 @@ function Expertise() {
                       Language
                     </h2>
                     <p className="text-xs w-full text-start leading-relaxed  ">
-                      I work with JavaScript <br /> and TypeScript. I prefer{" "}
-                      <br />
-                      TypeScript over JavaScript.
+                      I primarily work with
+                      <br /> TypeScript and also
+                      <br /> have expertise <br /> on Python.
                     </p>
                   </div>
                 </ArcCircle>
@@ -129,7 +129,7 @@ function Expertise() {
                   Frontend Developer
                 </h2>
                 <p className="text-xs w-full text-start leading-relaxed ">
-                  I use React, Next.js, <br /> Tailwind CSS, and
+                  I use Next.js, <br /> Tailwind CSS, and
                   <br /> TypeScript to build <br /> user interfaces.
                 </p>
               </div>
@@ -150,8 +150,9 @@ function Expertise() {
               <div className="flex flex-col items-center justify-start gap-2 ">
                 <h2 className="text-cyan-400 w-full text-left ">Language</h2>
                 <p className="text-xs w-full text-start leading-relaxed  ">
-                  I work with JavaScript <br /> and TypeScript. I prefer <br />
-                  TypeScript over JavaScript.
+                  I primarily work with
+                  <br /> TypeScript and also
+                  <br /> have expertise <br /> on Python.
                 </p>
               </div>
             </ArcCircle>
@@ -160,7 +161,7 @@ function Expertise() {
                 <h2 className="text-cyan-400 w-full text-left ">Webhook</h2>
                 <p className="text-xs w-full text-start leading-relaxed ">
                   I worked with <br /> webhooks of Stripe, <br /> Whatsapp, and
-                  google <br /> calendar and many more.
+                  GCP <br /> and many more.
                   <br />
                 </p>
               </div>

@@ -9,8 +9,9 @@ import blackSchoolGrid from "@/public/school_grid_black.png";
 import { MdCelebration } from "react-icons/md";
 import migrantMinds from "@/public/migrantminds.png";
 import tiffinBox from "@/public/tiffinbox.png";
-import whiteSajiloPdf from "@/public/Sajilo_Pdf.png";
+
 import npmDevkitLite from "@/public/npm.png";
+import paperGame from "@/public/paper-game.png";
 
 export const links = [
   {
@@ -89,21 +90,21 @@ export const myProjects = [
     title: "Devkit-Lite",
     description:
       "A lightweight TypeScript utility library providing essential developer tools for placeholder images, lorem ipsum text generation, and enhanced console logging.",
-    tags: ["chalk", "lorem-ipsum"],
+    tags: ["chalk", "NPM Library"],
     whiteUrl: npmDevkitLite,
     blackUrl: npmDevkitLite,
     url: "https://www.npmjs.com/package/devkit-lite",
     githubUrl: "https://github.com/sauravpandey538/devkit-lite",
   },
   {
-    title: "SajiloPdf",
+    title: "Paper Game",
     description:
-      "A very simple platform that allows students to generate and manipulate documents in PDF format.",
-    tags: ["PDF Generation", "Assignment Helper", "PDF Manipulation"],
-    whiteUrl: whiteSajiloPdf,
-    url: "https://pdf.sauravpandey.com/",
-    blackUrl: whiteSajiloPdf,
-    githubUrl: "https://github.com/sauravpandey538/pdf2pdf",
+      "A 2D multiplayer game where players collect coins, defeat opponents, and upgrade their abilities through an in-game shop.",
+    tags: ["Pixi.js", "Multiplayer Game", "2D"],
+    whiteUrl: paperGame,
+    url: "https://paper-game-livid.vercel.app/",
+    blackUrl: paperGame,
+    githubUrl: "https://github.com/sauravpandey538/paper-game",
   },
 ] as any;
 export const companyProjects = [
@@ -154,6 +155,7 @@ export const skillsData = [
 export const myInfo = {
   name: "Saurav Pandey",
   email: "hi@sauravpandey.com",
+  secondaryEmail: "sauravpandey0325@gmail.com",
   phone: "+9779869751266",
   address: "Kathmandu, Nepal",
   linkedin: "https://www.linkedin.com/in/saurav-pandey-b3648530a/",

@@ -12,7 +12,7 @@ export default function CurvedTimeline() {
       color: "#06b6d4",
       label: "Japanese Teacher",
       title: "N5/N4 Level",
-      date: "Oct 2023",
+      date: "July 2023",
     },
     {
       x: 350,
@@ -20,7 +20,7 @@ export default function CurvedTimeline() {
       color: "#06b6d4",
       label: "CrowdBazaar Pvt. Ltd.",
       title: "Full Stack Developer",
-      date: "Aug 2024",
+      date: "Feb 2024",
     },
     {
       x: 650,

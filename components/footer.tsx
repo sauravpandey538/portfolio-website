@@ -74,6 +74,13 @@ export default function Footer() {
             >
               TiffinBox
             </Link>
+            <Link
+              href="https://founderdesk.ai/"
+              target="_blank"
+              className="hover:text-cyan-400 transition-colors text-secondary"
+            >
+              Founder Desk
+            </Link>
 
             <Link
               href="https://code-sync-silk.vercel.app/"
@@ -83,11 +90,25 @@ export default function Footer() {
               CodeSync
             </Link>
             <Link
+              href="https://paper-game-livid.vercel.app/"
+              target="_blank"
+              className="hover:text-cyan-400 transition-colors text-secondary"
+            >
+              Paper Game
+            </Link>
+            <Link
               href="https://school-grid-lyart.vercel.app/"
               target="_blank"
               className="hover:text-cyan-400 transition-colors text-secondary"
             >
               SchoolWorksPro
+            </Link>
+            <Link
+              href="https://pdf.sauravpandey.com/"
+              target="_blank"
+              className="hover:text-cyan-400 transition-colors text-secondary"
+            >
+              SajiloPdf
             </Link>
           </div>
         </div>

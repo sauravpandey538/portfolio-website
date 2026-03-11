@@ -10,40 +10,44 @@ import MainHeading, { Paragraph } from "./text";
 
 const faq = [
   {
-    question: "How did you start your journey?",
+    question: "What technologies do you specialize in?",
     answer:
-      "I began my journey in October 2023, after returning from Japan, where I had been studying the Japanese language. During that time, I developed a strong interest in computer science and decided to explore it further. I started learning through YouTube resources and managed to gain a significant amount of knowledge on my own.",
+      "I specialize in building modern web applications using Next.js, TypeScript, and Tailwind CSS. I also work with Node.js, PostgreSQL, and cloud platforms like AWS and GCP to build scalable full-stack systems.",
   },
   {
-    question: "What is your favorite stack?",
+    question: "What type of projects do you enjoy building?",
     answer:
-      "My favorite stack is  Next.js, Tailwind CSS, and TypeScript. I love the fact that I can do anything with it.",
-  },
-
-  {
-    question: "What is your daily routine?",
-    answer:
-      "My daily routine is I wake up at 8:00 AM, I do breakfast, I start my work at 9:00 AM to  7:00 PM with some breaks, If any bug arises I fix it and if any feature is required I add it.",
+      "I enjoy building scalable web applications, AI-powered products, and real-time systems. I particularly like working on projects that combine modern web development with automation, APIs, and cloud infrastructure.",
   },
   {
-    question: "How do you handle stress?",
+    question: "How do you approach solving complex problems?",
     answer:
-      "I handle stress by doing late night motercycle riding, doing arts and traveling.",
+      "I break problems into smaller components, design a clear architecture, and focus on building scalable and maintainable solutions. I also rely on debugging, testing, and iterative improvement to ensure reliability.",
   },
   {
-    question: "What is your proudest achievement?",
+    question: "How do you ensure code quality?",
     answer:
-      "My proudest achievement is I was able to score perfect GPA 4 in my 2nd year of my bachelor's degree doing work as a developer and having good attendance.",
+      "I focus on writing clean, modular code, using TypeScript for type safety, and structuring applications with maintainable architecture. I also follow best practices such as reusable components, proper error handling, and clear documentation.",
   },
   {
-    question: "How much I am comfortable with remote work?",
+    question: "Are you comfortable with remote work?",
     answer:
-      "I deliver my work on time and I am very comfortable with remote work. If some problem arises from my side, I fix it ASAP no matter if it is weekday, weekend,  day or night",
+      "Yes, I am very comfortable working remotely. I communicate clearly, manage my time effectively, and ensure tasks are delivered on schedule while collaborating efficiently with teams.",
   },
   {
-    question: "Where you see yourself in 5 years?",
+    question: "What makes you different from other developers?",
     answer:
-      "In 5 years, I see myself as a senior AI  full-stack developer and I see myself working with a team of 10-15 people and I see myself as a CTO in the company working with a product based company.",
+      "I combine strong problem-solving skills with continuous learning and a passion for building real products. I focus not just on writing code but on designing scalable systems and delivering practical solutions.",
+  },
+  {
+    question: "Do you use AI tools in your development workflow?",
+    answer:
+      "Yes. I use AI-assisted development tools such as Cursor, Loveable and other tools to speed up development, improve productivity, and explore solutions faster. However, I always review, optimize, and structure the code to ensure quality, scalability, and maintainability.",
+  },
+  {
+    question: "What are your long-term goals as a developer?",
+    answer:
+      "My goal is to grow into a senior full-stack developer specializing in AI-powered applications and scalable systems, eventually contributing to building impactful products within strong engineering teams.",
   },
 ];
 

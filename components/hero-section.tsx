@@ -46,13 +46,14 @@ function HeroSection() {
 
           <p className="text-secondary leading-loose text-base sm:text-lg">
             Beyond my professional work, I’ve also built personal projects
-            including <span className="font-semibold">CodeSync</span>, a
+            including{" "}
+            <span className="font-semibold text-purple-400">CodeSync</span>, a
             JavaScript compiler platform, and{" "}
-            <span className="font-semibold">SajiloPdf</span>, a document
-            generator for assignments.
+            <span className="font-semibold text-purple-400">Devkit-Lite</span>,
+            a npm library
           </p>
           <Link
-            href="/Saurav_Resume.pdf"
+            href="/Saurav_Pandey_Resume_2026.pdf"
             rel="noopener noreferrer"
             target="_blank"
           >
