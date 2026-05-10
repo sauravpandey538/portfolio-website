@@ -53,7 +53,7 @@ function HeroSection() {
             a npm library
           </p>
           <Link
-            href="/Saurav_Pandey_Resume_2026.pdf"
+            href="/Saurav_Resume.pdf"
             rel="noopener noreferrer"
             target="_blank"
           >
